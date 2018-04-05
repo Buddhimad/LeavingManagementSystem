@@ -1,0 +1,60 @@
+#myBtn{
+    opacity: 3.0;
+   
+}
+#header{
+    height: 23%;
+         background-size:100% auto;
+     
+}
+#profilepic{
+    vertical-align: middle;
+    border: solid 1px;
+}
+.panel-body{
+    height: 370px;
+     background: rgba(5, 4, 2, 0.2);
+    opacity: 0.5;
+    filter: Alpha(opacity=50);
+    overflow-y: scroll;
+}
+.tab-content{
+      margin-top: 30px;
+      margin-left: 10px;
+      margin-right: 10px;
+    
+    
+}
+body{
+    background-image: url(../img/rts.jpg);
+     background-size:100% auto;
+}
+#transp{
+ opacity: 0.85;
+    filter: Alpha(opacity=50);
+  
+    
+}
+#transp1{
+ opacity: 0.85;
+    filter: Alpha(opacity=50);
+   
+   
+    
+}
+#transp2{
+opacity: 0.85;
+    filter: Alpha(opacity=50);
+   
+    
+}
+#transp3{
+opacity: 0.85;
+    filter: Alpha(opacity=50);
+   
+    
+}
+#myBtn{
+     cursor: pointer;
+}
+

@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Sign Up</title>
+        <link rel="stylesheet" type="text/css" href="css/Style.css">
+         <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+         <script type="text/javascript" src="js/MyScript.js"></script>
+         <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/script2.js"></script>
+    </head>
+    <body>
+       
+       <div class="wrap">
+                <p class="form-title">
+                    Sign Up</p>
+                <p class="form-boy">Please fill all fields</p>
+                <form class="frm" action="signup">
+                <input type="text" placeholder="Username" id="username" name="username"/>
+                <input type="text" placeholder="Email" id="Email" name="email"/>
+                <input type="password" placeholder="password" name="password" id="password"/>
+                <input type="password" placeholder="confirm_password" name="confirm_password" id="confirm_password" onkeyup="validatePassword()" />
+                <div id='message'></div>
+                <select id="position" name="position" onchange="myFunction()">
+                    <option value="manager">Manager</option>
+                    <option value="dh">Department Head</option>
+                    <option value="employee">Employee</option>
+                </select> 
+                
+                <select id="department" name="department">
+                     <option value="All">All</option>
+                    <option value="A">Account</option>
+                    <option value="HR">HR</option>
+                    <option value="IT">IT</option>
+                    <option value="S">Sales</option>
+                </select> 
+                <style>
+                    select {
+                        margin-bottom: 5px;
+                        width: 100%;
+                        border: none;
+                        background-color: #f1f1f1;
+                        opacity:0.3;
+                        padding: 5px 10px;
+}
+                </style>
+                <input type="submit" value="Sign Up" class="btn btn-success btn-sm" onclick="myFunction()"/>  
+         
+                <c:out value="${msg}"/>
+               
+                </form>
+            </div>
+    </body>
+</html>
